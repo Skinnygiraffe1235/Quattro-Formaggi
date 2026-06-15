@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quattro Formaggi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-instrument="violin1">
+
+  <h1>Quattro Formaggi</h1>
+
+  <div class="instrumentHeader">
+    <button class="arrowButton" onclick="previousInstrument()">←</button>
+
+    <div class="instrumentNameBox">
+      <div class="smallLabel">Selected Instrument</div>
+      <div id="currentInstrument" class="bigInstrumentName">Violin 1</div>
+    </div>
+
+    <button class="arrowButton" onclick="nextInstrument()">→</button>
+  </div>
+
+  <div class="mainLayout">
+
+    <div class="panel characterPanel">
+
+      <h2 class="moodTitle">
+        Mood Pad
+        <span class="tooltipText">
+          Drag to shape the tone. Scroll on the pad to change space. Double click the pad to randomize.
+        </span>
+      </h2>
+
+      <div id="xyPad" class="xyPad">
+        <div class="axis top">Bright</div>
+        <div class="axis bottom">Dark</div>
+        <div class="axis left">Soft</div>
+        <div class="axis right">Aggressive</div>
+
+        <div id="spaceHalo" class="spaceHalo">
+          <div class="spaceGlow"></div>
+          <div class="spaceOuterRing"></div>
+          <div id="spaceInnerRing" class="spaceInnerRing"></div>
+        </div>
+
+        <div id="xyDot" class="xyDot"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="keyboardDock">
+    <div class="octaveBadge">C1</div>
+    <div class="octaveBadge rightBadge">C7</div>
+    <div id="pianoKeyboard" class="pianoKeyboard"></div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

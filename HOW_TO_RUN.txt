@@ -1,0 +1,65 @@
+		HOW TO RUN QUATTRO FORMAGGI
+
+
+
+	1	Open Terminal.
+
+
+
+	2	Go to the project folder.
+
+		If the folder is on your Desktop, use:
+
+		cd ~/Desktop/Quattro-Formaggi
+
+		If the folder is somewhere else, type cd, add a space, then drag the Quattro-Formaggi folder into Terminal and press Enter.
+
+
+
+	3	Install dependencies if this is the first time running the project:
+
+		npm install
+
+
+
+	4	Start the Node.js server:
+
+		node server.js
+
+
+
+	5	Open the browser and go to:
+
+		http://localhost:3000
+
+
+
+	6	run string_engine.scd and:
+
+
+		Cmd + A
+		Cmd + Enter
+
+		Wait until the SuperCollider post window says:
+
+		String quartet engine loaded and ready with MIDI support.
+
+
+
+	7	Now the instrument is ready to play.
+
+
+
+
+
+	* play notes : Computer keyboard / with mouse on piano roll / MIDI keyboard
+
+	* Mood Pad: drag to shape the sound
+
+	* randomize : Space bar / Double click Mood Pad
+
+	* change instrument : Left , Right arrows
+
+	* change octave : Z , X
+
+	* change reverb : Scroll on Mood Pad / Up , Down arrows
